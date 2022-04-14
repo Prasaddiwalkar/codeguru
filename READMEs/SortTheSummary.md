@@ -9,11 +9,11 @@ have the same frequency, they should be sorted ascending.
 Example
 arr = [3, 3, 1, 2, 1]
 
-• There are two values, 3 and 1, each with a frequency of 2, and one
+- There are two values, 3 and 1, each with a frequency of 2, and one
 value 2 with a frequency of 1: ([3, 2], [1, 2], [2, 1]
 Sort the 2-dimensional array descending by frequency: [[3,2], [1,
 2], [2, 1]]
-• Sort the 2-dimensional array ascending by value for values with
+- Sort the 2-dimensional array ascending by value for values with
 matching frequencies: [[1,2], [3, 2], [2, 1]]
 
 Function Description:
