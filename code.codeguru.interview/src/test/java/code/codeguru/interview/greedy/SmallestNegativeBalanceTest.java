@@ -1,12 +1,14 @@
-package code.codeguru.interview;
+package code.codeguru.interview.greedy;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import code.codeguru.interview.SmallestNegativeBalance;
+import code.codeguru.interview.greedy.SmallestNegativeBalance;
 
 public class SmallestNegativeBalanceTest {
 
@@ -65,6 +67,25 @@ public class SmallestNegativeBalanceTest {
 		input.add(entry6);
 
 		System.out.println(debt.smallestNegativeBalance(input));
+
+		int[] array1 = { 1, 2, 3 };
+		int[] array2 = { 4, 5, 6 };
+
+		int[] thirdarray = new int[array1.length + array2.length];
+
+//		array Copy using system.arraycopy
+		System.arraycopy(array1, 0, thirdarray, 0, array1.length);
+		System.arraycopy(array2, 0, thirdarray, array1.length, array2.length);
+
+//		array copy using collections;
+		List<Integer> list1 = Arrays.stream(array1).boxed().collect(Collectors.toList());
+
+		list1.addAll(Arrays.stream(array2).boxed().collect(Collectors.toList()));
+
+		Integer[] fourthArray = new Integer[list1.size()];
+		fourthArray = list1.toArray(fourthArray);
+
+		System.out.println();
 	}
 
 }

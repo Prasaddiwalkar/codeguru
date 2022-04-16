@@ -1,4 +1,4 @@
-package code.codeguru.interview;
+package code.codeguru.interview.greedy;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// UBS preparation
+// KLA interview
 public class SmallestNegativeBalance {
 
 	public List<String> smallestNegativeBalance(List<ArrayList<String>> debts) {
