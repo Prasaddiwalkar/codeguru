@@ -29,7 +29,7 @@ public class BookingService {
     @Autowired
     LocationRepository locationRepo;
 
-    public void addBooking(String fromLocation, String toLocation, LocalDateTime bookingDateTime) {
+    public Booking addBooking(String fromLocation, String toLocation, LocalDateTime bookingDateTime) {
 
         // get all available/IDLE cars from pick_up_location
         // calculate IDLE time for any CAB for pick_up_location
@@ -51,7 +51,7 @@ public class BookingService {
         booking.setPick_up_location_id(currentLocation.get(0));
         booking.setDest_location_id(destinationLocation.get(0));
         // get list of cabs having highest idle time
-        bookingRepo.save(booking);
+        return bookingRepo.save(booking);
 
     }
 

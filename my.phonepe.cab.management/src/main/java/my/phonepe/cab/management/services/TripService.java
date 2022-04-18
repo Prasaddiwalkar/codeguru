@@ -14,7 +14,7 @@ public class TripService {
     @Autowired
     TripRepository tripRepo;
 
-    public void startTrip(Trip trip, String state) {
+    public Trip startTrip(Trip trip, String state) {
 
         trip.setTrip_status("INPROGRESS");
 
@@ -22,16 +22,16 @@ public class TripService {
 //        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
         trip.setStart_time(date);
-        tripRepo.save(trip);
+        return tripRepo.save(trip);
     }
 
-    public void endTrip(Trip trip, String state) {
+    public Trip endTrip(Trip trip, String state) {
 
         trip.setTrip_status("COMPLETED");
 
         trip.getBooking_id().getCab_id().setState(state);
         trip.setStart_time(new Date());
-        tripRepo.save(trip);
+        return tripRepo.save(trip);
     }
 
 }
