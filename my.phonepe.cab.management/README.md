@@ -26,10 +26,10 @@ In case the Cab_State is ON_TRIP, the City_Id will be indeterminate
 
  
 ## Bonus​: 
-a. Provide insights such as for how much time was a cab idle in a given duration ? 
-b. Keep a record of the cab history of each cab. (A cab history could just be a record of 
+1. Provide insights such as for how much time was a cab idle in a given duration ? 
+2. Keep a record of the cab history of each cab. (A cab history could just be a record of 
 what all states a cab has gone through) 
-c. Find cities where the demand for cabs is high and the time when the demand is highest 
+3. Find cities where the demand for cabs is high and the time when the demand is highest 
 
  
 
