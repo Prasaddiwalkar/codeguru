@@ -34,6 +34,7 @@ public class CabController {
         cabService.addOrUpdate(cab);
     }
 
+    
     @PatchMapping(value = "/deactivate", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void deactivateCab(@RequestBody Cab cab) {
         cabService.addOrUpdate(cab);
@@ -49,9 +50,6 @@ public class CabController {
     @GetMapping(value = "/idletime")
     public Long idleTime(@RequestParam Cab cab, @RequestParam(name = "fromDate") Date from,
             @RequestParam(name = "to") Date to) {
-
-//        cabService.get
-//        cabService.getTotalIdleTime(null, null, null)
         return cabService.getTotalIdleTime(cab, from, to);
     }
 }
