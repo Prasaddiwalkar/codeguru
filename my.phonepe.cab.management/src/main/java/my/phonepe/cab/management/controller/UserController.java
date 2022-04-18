@@ -1,6 +1,7 @@
 package my.phonepe.cab.management.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,12 +18,12 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping(value = "/register")
+    @PostMapping(value = "/register", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public User registerUser(@RequestBody User user) {
         return userService.addOrUpdate(user);
     }
 
-    @PatchMapping(value = "/deactivate")
+    @PatchMapping(value = "/deactivate", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public User deactivateUser(@RequestBody User user) {
         return userService.addOrUpdate(user);
     }

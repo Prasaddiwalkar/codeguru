@@ -1,6 +1,7 @@
 package my.phonepe.cab.management.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -18,17 +19,17 @@ public class LocationController {
     @Autowired
     LocationService locationService;
 
-    @PostMapping(value = "/onboard")
+    @PostMapping(value = "/onboard", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Location addLocation(@RequestBody Location location) {
         return locationService.addOrUpdate(location);
     }
 
-    @PutMapping(value = "/update")
+    @PutMapping(value = "/update", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Location updateLocation(@RequestBody Location location) {
         return locationService.addOrUpdate(location);
     }
 
-    @PatchMapping(value = "/deactivate")
+    @PatchMapping(value = "/deactivate", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Location deactivateLocation(@RequestBody Location location) {
         return locationService.addOrUpdate(location);
     }

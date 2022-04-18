@@ -36,7 +36,7 @@ public class UserControllerTest {
     @MockBean
     UserService userService;
 
-    private final String URL = "/user/";
+    private final String URL = "/user/register";
 
     @Test
     public void testRegisteruser() throws Exception {

@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,12 +34,12 @@ public class CabController {
         cabService.addOrUpdate(cab);
     }
 
-    @PatchMapping(value = "/deactivate")
+    @PatchMapping(value = "/deactivate", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void deactivateCab(@RequestBody Cab cab) {
         cabService.addOrUpdate(cab);
     }
 
-    @PostMapping(value = "/book")
+    @PostMapping(value = "/book", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Booking bookCab(@RequestParam(name = "from") String fromLocation,
             @RequestParam(name = "to") String toLocation,
             @RequestParam(name = "time") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime tripTime) {
