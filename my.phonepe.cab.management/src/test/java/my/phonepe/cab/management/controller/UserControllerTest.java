@@ -61,8 +61,8 @@ public class UserControllerTest {
         when(userService.addOrUpdate(any(User.class))).thenReturn(user);
 
         // Execute
-        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post(URL).contentType(MediaType.APPLICATION_JSON_UTF8)
-                .accept(MediaType.APPLICATION_JSON_UTF8)
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post(URL)
+                .contentType(MediaType.APPLICATION_JSON_VALUE).accept(MediaType.APPLICATION_JSON_VALUE)
                 .content(my.phonepe.cab.management.TestUtils.objectToJson(user))).andReturn();
 
         // verify
