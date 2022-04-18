@@ -44,7 +44,8 @@ Expectations​:
 
 
 # Swagger API reference
-![image](https://user-images.githubusercontent.com/41470880/163781882-ae6db5f4-f994-4eb2-b5a4-810e572cfb46.png)
+![image](https://user-images.githubusercontent.com/41470880/163784449-311de667-3587-44c6-8c87-d068d2e58be4.png)
+
 
 
 # DB ER Diagram
