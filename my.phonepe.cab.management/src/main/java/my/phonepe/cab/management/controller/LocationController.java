@@ -13,21 +13,21 @@ import my.phonepe.cab.management.services.LocationService;
 @RequestMapping(value = "/location")
 public class LocationController {
 
-	@Autowired
-	LocationService locationService;
+    @Autowired
+    LocationService locationService;
 
-	@PostMapping(value = "/onboard")
-	public void addLocation(@RequestBody Location location) {
-		locationService.addOrUpdate(location);
-	}
+    @PostMapping(value = "/onboard")
+    public void addLocation(@RequestBody Location location) {
+        locationService.addOrUpdate(location);
+    }
 
-	@PostMapping(value = "/update")
-	public void updateLocation(@RequestBody Location location) {
-		locationService.addOrUpdate(location);
-	}
+    @PostMapping(value = "/update")
+    public void updateLocation(@RequestBody Location location) {
+        locationService.addOrUpdate(location);
+    }
 
-	@PostMapping(value = "/deactivate")
-	public void deactivateLocation(@RequestBody Location location) {
-		locationService.addOrUpdate(location);
-	}
+    @PostMapping(value = "/deactivate")
+    public void deactivateLocation(@RequestBody Location location) {
+        locationService.addOrUpdate(location);
+    }
 }

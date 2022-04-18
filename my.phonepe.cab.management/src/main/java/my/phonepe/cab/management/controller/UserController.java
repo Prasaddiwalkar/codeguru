@@ -13,16 +13,16 @@ import my.phonepe.cab.management.services.UserService;
 @RequestMapping(value = "/user")
 public class UserController {
 
-	@Autowired
-	UserService userService;
+    @Autowired
+    UserService userService;
 
-	@PostMapping(value = "/register")
-	public void registerUser(@RequestBody User user) {
-		userService.addOrUpdate(user);
-	}
+    @PostMapping(value = "/register")
+    public void registerUser(@RequestBody User user) {
+        userService.addOrUpdate(user);
+    }
 
-	@PostMapping(value = "/deactivate")
-	public void deactivateUser(@RequestBody User user) {
-		userService.addOrUpdate(user);
-	}
+    @PostMapping(value = "/deactivate")
+    public void deactivateUser(@RequestBody User user) {
+        userService.addOrUpdate(user);
+    }
 }

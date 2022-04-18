@@ -118,6 +118,34 @@ INSERT INTO `location` VALUES (1,'Abohar',30.144533,74.19552,'India','Punjab',NU
 UNLOCK TABLES;
 
 --
+-- Table structure for table `state`
+--
+
+DROP TABLE IF EXISTS `state`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `state` (
+  `state_id` int NOT NULL AUTO_INCREMENT,
+  `cab_id` int NOT NULL,
+  `state` enum('IDLE','ONTRIP') NOT NULL,
+  `start_time` datetime NOT NULL,
+  `end_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`state_id`),
+  KEY `cab_id_idx` (`cab_id`),
+  CONSTRAINT `booked_cab_id` FOREIGN KEY (`cab_id`) REFERENCES `cab_inventory` (`cab_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `state`
+--
+
+LOCK TABLES `state` WRITE;
+/*!40000 ALTER TABLE `state` DISABLE KEYS */;
+/*!40000 ALTER TABLE `state` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `trip`
 --
 
@@ -126,14 +154,15 @@ DROP TABLE IF EXISTS `trip`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `trip` (
   `trip_id` int NOT NULL AUTO_INCREMENT,
-  `booking_id` varchar(45) DEFAULT NULL,
+  `booking_id` int DEFAULT NULL,
   `trip_status` enum('COMPLETED','INPROGRESS') DEFAULT NULL,
   `payment_method` varchar(45) DEFAULT NULL,
   `start_time` datetime DEFAULT NULL,
   `end_time` datetime DEFAULT NULL,
   `price` double DEFAULT NULL,
   PRIMARY KEY (`trip_id`),
-  CONSTRAINT `booking_id` FOREIGN KEY (`trip_id`) REFERENCES `booking` (`booking_id`)
+  KEY `booking_id_idx` (`booking_id`),
+  CONSTRAINT `booking_id` FOREIGN KEY (`booking_id`) REFERENCES `booking` (`booking_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -191,4 +220,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-18  8:45:08
+-- Dump completed on 2022-04-18 12:41:41

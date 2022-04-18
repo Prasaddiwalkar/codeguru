@@ -9,10 +9,10 @@ import my.phonepe.cab.management.repository.UserRepository;
 @Service
 public class UserService {
 
-	@Autowired
-	UserRepository userRepo;
+    @Autowired
+    UserRepository userRepo;
 
-	public void addOrUpdate(User user) {
-		userRepo.save(user);
-	}
+    public void addOrUpdate(User user) {
+        userRepo.save(user);
+    }
 }

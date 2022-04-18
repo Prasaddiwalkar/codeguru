@@ -8,10 +8,10 @@ import my.phonepe.cab.management.repository.LocationRepository;
 
 @Service
 public class LocationService {
-	@Autowired
-	LocationRepository locationRepo;
+    @Autowired
+    LocationRepository locationRepo;
 
-	public void addOrUpdate(Location location) {
-		locationRepo.save(location);
-	}
+    public void addOrUpdate(Location location) {
+        locationRepo.save(location);
+    }
 }
