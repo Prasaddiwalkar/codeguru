@@ -39,7 +39,7 @@ public class UserControllerTest {
     private final String URL = "/user/register";
 
     @Test
-    public void testRegisteruser() throws Exception {
+    public void testRegisterUser() throws Exception {
 
         // prepare data and mock's behaviour
         Location location = new Location();
@@ -76,5 +76,15 @@ public class UserControllerTest {
                 User.class);
         assertNotNull(resultUser);
         assertEquals("Prasad", resultUser.getFirst_name().toString());
+    }
+
+    @Test
+    public void getAllUsersTest() {
+
+    }
+
+    @Test
+    public void deactivateFUsersTest() {
+
     }
 }

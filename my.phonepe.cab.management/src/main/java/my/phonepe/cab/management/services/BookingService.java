@@ -1,11 +1,9 @@
 package my.phonepe.cab.management.services;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +33,6 @@ public class BookingService {
         // calculate IDLE time for any CAB for pick_up_location
         // select randomly from list.
 
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        Date date = new Date();
-
         List<Location> currentLocation = locationRepo.findByCityAndActive(fromLocation, "Y");
 
         Cab cab = getMostIdelCab(currentLocation.get(0));
@@ -52,7 +47,6 @@ public class BookingService {
         booking.setDest_location_id(destinationLocation.get(0));
         // get list of cabs having highest idle time
         return bookingRepo.save(booking);
-
     }
 
     private Cab getMostIdelCab(Location fromLocation) {
