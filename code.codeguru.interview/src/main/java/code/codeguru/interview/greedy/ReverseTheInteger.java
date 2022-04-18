@@ -19,6 +19,7 @@ public class ReverseTheInteger {
 //		if (new StringBuffer(String.valueOf(input)).reverse().toString().equals(input)) {
 //			return true;
 //		}
+		
 		int tempInput = input;
 		int reverse = 0;
 		while (tempInput != 0) {
