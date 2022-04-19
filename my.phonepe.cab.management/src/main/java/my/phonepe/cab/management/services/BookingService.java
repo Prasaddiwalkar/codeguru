@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import my.phonepe.cab.management.entity.Booking;
 import my.phonepe.cab.management.entity.Cab;
 import my.phonepe.cab.management.entity.Location;
+import my.phonepe.cab.management.exceptions.CabForTripNotAvailableException;
 import my.phonepe.cab.management.repository.BookingRepository;
 import my.phonepe.cab.management.repository.CabRepository;
 import my.phonepe.cab.management.repository.LocationRepository;
@@ -27,21 +28,26 @@ public class BookingService {
     @Autowired
     LocationRepository locationRepo;
 
-    public Booking addBooking(String fromLocation, String toLocation, LocalDateTime bookingDateTime) {
+    public Booking addBooking(String fromCity, String toCity, LocalDateTime bookingDateTime,
+            Long mobileNumber) {
 
         // get all available/IDLE cars from pick_up_location
         // calculate IDLE time for any CAB for pick_up_location
         // select randomly from list.
 
-        List<Location> currentLocation = locationRepo.findByCityAndActive(fromLocation, "Y");
+        List<Location> currentLocation = locationRepo.findByCityAndActive(fromCity, "Y");
 
-        Cab cab = getMostIdelCab(currentLocation.get(0));
+        Cab cab = findCab(currentLocation.get(0));
         Booking booking = new Booking();
         if (cab != null) {
             booking.setCab_id(cab);
+        } else {
+            throw new CabForTripNotAvailableException(
+                    String.format("Cab for Trip from %s to %s for the user %s not available", fromCity, toCity,
+                            String.valueOf(mobileNumber)));
         }
 
-        List<Location> destinationLocation = locationRepo.findByCityAndActive(toLocation, "Y");
+        List<Location> destinationLocation = locationRepo.findByCityAndActive(toCity, "Y");
 
         booking.setPick_up_location_id(currentLocation.get(0));
         booking.setDest_location_id(destinationLocation.get(0));
@@ -49,9 +55,16 @@ public class BookingService {
         return bookingRepo.save(booking);
     }
 
-    private Cab getMostIdelCab(Location fromLocation) {
+    // Date
+    private Cab findCab(Location fromCity) {
 
-        List<Cab> idleCabs = cabRepo.findByStateAndSourceLocation("IDLE", fromLocation.location_id, "Y");
+        // getIdleCabs cab inventory ... if available then return first cab from here
+        // itself
+        // If no idle cabs available right away then determine available cabs for
+        // required date and in city.
+        // getAvailableCabs
+        // return aviable cab
+        List<Cab> idleCabs = cabRepo.findByStateAndSourceLocation("IDLE", fromCity.location_id, "Y");
         Cab maxIdelcab = null;
         if (idleCabs != null && !idleCabs.isEmpty()) {
             Comparator<Cab> comparator = Comparator.comparing(Cab::getIdlefrom);

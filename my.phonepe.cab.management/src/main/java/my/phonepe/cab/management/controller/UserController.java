@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import my.phonepe.cab.management.entity.User;
-import my.phonepe.cab.management.exceptions.RecordAlreadyPresentException;
+import my.phonepe.cab.management.exceptions.RecordAlreadyExistsException;
 import my.phonepe.cab.management.exceptions.RecordNotFoundException;
 import my.phonepe.cab.management.services.UserService;
 
@@ -21,7 +21,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @ExceptionHandler(RecordAlreadyPresentException.class)
+    @ExceptionHandler(RecordAlreadyExistsException.class)
     @PostMapping(value = "/register", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public User registerUser(@RequestBody User user) {
         return userService.addOrUpdate(user);

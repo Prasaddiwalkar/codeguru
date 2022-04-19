@@ -34,17 +34,17 @@ public class CabController {
         cabService.addOrUpdate(cab);
     }
 
-    
     @PatchMapping(value = "/deactivate", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void deactivateCab(@RequestBody Cab cab) {
         cabService.addOrUpdate(cab);
     }
 
+// add user as input
     @PostMapping(value = "/book", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Booking bookCab(@RequestParam(name = "from") String fromLocation,
-            @RequestParam(name = "to") String toLocation,
-            @RequestParam(name = "time") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime tripTime) {
-        return bookingService.addBooking(fromLocation, toLocation, tripTime);
+    public Booking bookCab(@RequestParam(name = "from") String fromCity, @RequestParam(name = "to") String toCity,
+            @RequestParam(name = "time") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime tripTime,
+            @RequestParam(name = "Mobile Number") Long mobileNumber) {
+        return bookingService.addBooking(fromCity, toCity, tripTime, mobileNumber);
     }
 
     @GetMapping(value = "/idletime")

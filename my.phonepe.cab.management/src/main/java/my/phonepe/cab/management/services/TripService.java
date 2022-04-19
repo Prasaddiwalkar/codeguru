@@ -30,7 +30,7 @@ public class TripService {
         trip.setTrip_status("COMPLETED");
 
         trip.getBooking_id().getCab_id().setState(state);
-        trip.setStart_time(new Date());
+        trip.setEnd_time(new Date());
         return tripRepo.save(trip);
     }
 
