@@ -10,35 +10,35 @@ import java.util.Map;
 // KLA interview
 public class SmallestNegativeBalance {
 
-	public List<String> smallestNegativeBalance(List<ArrayList<String>> debts) {
+    public List<String> smallestNegativeBalance(List<ArrayList<String>> debts) {
 
-		Map<String, Integer> smallestNegativeMap = new HashMap<String, Integer>();
+        Map<String, Integer> smallestNegativeMap = new HashMap<String, Integer>();
 
-		debts.forEach((debt) -> {
-			smallestNegativeMap.put(debt.get(1),
-					smallestNegativeMap.getOrDefault(debt.get(1), 0) + Integer.parseInt(debt.get(2)));
+        debts.forEach((debt) -> {
+            smallestNegativeMap.put(debt.get(1),
+                    smallestNegativeMap.getOrDefault(debt.get(1), 0) + Integer.parseInt(debt.get(2)));
 
-			smallestNegativeMap.put(debt.get(0),
-					smallestNegativeMap.getOrDefault(debt.get(0), 0) - Integer.parseInt(debt.get(2)));
-		});
+            smallestNegativeMap.put(debt.get(0),
+                    smallestNegativeMap.getOrDefault(debt.get(0), 0) - Integer.parseInt(debt.get(2)));
+        });
 
-		// get minimum
-		int min = Collections.min(smallestNegativeMap.values());
+        // get minimum
+        int min = Collections.min(smallestNegativeMap.values());
 
-		List<String> output = new ArrayList<String>();
+        List<String> output = new ArrayList<String>();
 
-		if (Collections.frequency(smallestNegativeMap.values(), min) <= 0) {
-			output.add("Nobody has a negative balance");
-			return output;
-		}
+        if (Collections.frequency(smallestNegativeMap.values(), min) <= 0) {
+            output.add("Nobody has a negative balance");
+            return output;
+        }
 
-		smallestNegativeMap.forEach((key, value) -> {
-			if (value == min) {
-				output.add(key);
-			}
-		});
+        smallestNegativeMap.forEach((key, value) -> {
+            if (value == min) {
+                output.add(key);
+            }
+        });
 
-		Collections.sort(output);
-		return output;
-	}
+        Collections.sort(output);
+        return output;
+    }
 }
