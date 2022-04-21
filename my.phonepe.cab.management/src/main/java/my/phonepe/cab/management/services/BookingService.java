@@ -28,8 +28,7 @@ public class BookingService {
     @Autowired
     LocationRepository locationRepo;
 
-    public Booking addBooking(String fromCity, String toCity, LocalDateTime bookingDateTime,
-            Long mobileNumber) {
+    public Booking addBooking(String fromCity, String toCity, LocalDateTime bookingDateTime, Long mobileNumber) {
 
         // get all available/IDLE cars from pick_up_location
         // calculate IDLE time for any CAB for pick_up_location
@@ -78,10 +77,9 @@ public class BookingService {
                 }
             }
 
-            if (!maxIdelcabList.isEmpty() || maxIdelcabList.size() > 1) {
+//            || maxIdelcabList.size() > 1
+            if (!maxIdelcabList.isEmpty()) {
                 Collections.shuffle(maxIdelcabList);
-                maxIdelcab = maxIdelcabList.get(0);
-            } else if (!maxIdelcabList.isEmpty() || maxIdelcabList.size() == 1) {
                 maxIdelcab = maxIdelcabList.get(0);
             } else {
                 maxIdelcab = null;

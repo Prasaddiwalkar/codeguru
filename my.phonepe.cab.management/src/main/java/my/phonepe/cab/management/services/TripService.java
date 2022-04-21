@@ -18,8 +18,8 @@ public class TripService {
 
         trip.setTrip_status("INPROGRESS");
 
+        // TODO: Check current status of the cab
         trip.getBooking_id().getCab_id().setState(state);
-//        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
         trip.setStart_time(date);
         return tripRepo.save(trip);
@@ -29,6 +29,7 @@ public class TripService {
 
         trip.setTrip_status("COMPLETED");
 
+        // TODO: Check current status of the cab
         trip.getBooking_id().getCab_id().setState(state);
         trip.setEnd_time(new Date());
         return tripRepo.save(trip);

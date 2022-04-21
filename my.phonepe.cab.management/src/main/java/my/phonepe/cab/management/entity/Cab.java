@@ -11,6 +11,11 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+enum States{
+    ON_TRIP,
+    IDLE
+}
+
 @Entity
 @Table(name = "cab_inventory")
 public class Cab {
@@ -34,6 +39,7 @@ public class Cab {
     @OneToOne
     private Location base_location;
 
+    
     @MapKey(name = "state")
     @JsonProperty("state")
     private String state;
@@ -97,10 +103,12 @@ public class Cab {
     }
 
     public String getState() {
+        
         return state;
     }
 
     public void setState(String state) {
+        
         this.state = state;
     }
 

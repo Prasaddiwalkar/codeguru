@@ -35,8 +35,14 @@ public class CabService {
 
     public Long getTotalIdleTime(Cab cab, Date from, Date to) {
 
+//        TODO: correct logic for getting IDLE only 
+
+        // 10 to 20 .. 5-15 IDLE
+        // 
+        
         long idleTime = stateRepo.findStatesForDuration(cab.getCab_id(), from, to, "IDLE").stream()
                 .mapToLong(i -> (i.getStart_time().getTime() - i.getEnd_time().getTime())).sum();
+
         return idleTime;
     }
 }
