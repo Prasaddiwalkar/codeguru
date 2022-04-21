@@ -5,7 +5,7 @@
     xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
-    xmlns:tns="http://oms.soap.equinix.codeguru.code/shellorder"
+    xmlns:tns3="http://oms.soap.equinix.codeguru.code/shellorder"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
     xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
@@ -18,12 +18,12 @@
 
     <!-- Define the messages exchanged -->
     <message name="shellOrderRequestInputType">
-        <part name="ShellOrderRequest" type="tns:ShellOrderRequestType"/>
+        <part name="ShellOrderRequest" type="tns3:ShellOrderRequestType"/>
     </message>
     
-    <!-- Define the output message : A sentence saying : "Hello <fullUsername> from <HOSTNAME>" -->
+    <!-- Define the output message : Order details which should contains, OrderReferenceId,OrderNumber and SRNumber" -->
     <message name="shellOrderRequestOutputType">
-        <part name="response" type="tns:ShellOrderResponseType"/>
+        <part name="response" type="tns3:ShellOrderResponseType"/>
     </message>
 
     <!-- Define the interface shellOrderInterface that will have one method named shellorder -->
@@ -32,15 +32,15 @@
         <operation name="shellorder">
             <documentation>This operation takes in a parameter ShellOrderRequest type and return ShellOrderResponse type</documentation>
             <!-- The method shellOrderRequestOutputType uses the two messages defined in the message elements -->
-            <input name="request" message="tns:shellOrderRequestInputType" />
-            <output name="response" message="tns:shellOrderRequestOutputType" />
+            <input name="request" message="tns3:shellOrderRequestInputType" />
+            <output name="response" message="tns3:shellOrderRequestOutputType" />
         </operation>
     </portType>
     
     <!-- Define how to interact with the webservice -->
 
     <!-- Define the protocol used for the shellOrderRequestOutputType service : SOAP on HTTP with an XML document put in the soap:body -->
-    <binding name="shellOrderSoapHttpBinding" type="tns:shellOrderInterface">
+    <binding name="shellOrderSoapHttpBinding" type="tns3:shellOrderInterface">
         <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
         <operation name="shellorder">
             <input>
@@ -56,9 +56,9 @@
 
     <!-- The services will be located at http://localhost:8080/services/shellOrderRequestOutputType -->
     <service name="shellOrderService">
-        <port name="shellOrderInterface" binding="tns:shellOrderSoapHttpBinding">
+        <port name="shellOrderInterface" binding="tns3:shellOrderSoapHttpBinding">
             <!-- Do not mind about it, the framework will rewrite it accordingly -->
-            <soap:address location="http://localhost:8080/services/shellorder" />
+            <soap:address location="http://localhost:8080/shellorder/services/shellorder" />
         </port>
     </service>
 </definitions>

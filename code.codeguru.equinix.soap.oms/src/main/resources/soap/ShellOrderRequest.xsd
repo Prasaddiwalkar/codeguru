@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:tns="http://oms.soap.equinix.codeguru.code/shellorder"
+           xmlns:tns3="http://oms.soap.equinix.codeguru.code/shellorder"
            targetNamespace="http://oms.soap.equinix.codeguru.code/shellorder"
            elementFormDefault="qualified" attributeFormDefault="unqualified">
  <xs:complexType name="ShellOrderRequestType">

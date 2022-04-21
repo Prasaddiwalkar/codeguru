@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM azul/zulu-openjdk:11
 VOLUME /tmp /var/log
 ENV SPRING_PROFILES_ACTIVE=docker
 COPY target/*.jar app.jar
