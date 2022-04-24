@@ -1,0 +1,71 @@
+<definitions
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns3="http://oms.soap.equinix.codeguru.code/shellorder"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+	xmlns="http://schemas.xmlsoap.org/wsdl/"
+	targetNamespace="http://oms.soap.equinix.codeguru.code/shellorder">
+	<types>
+		<xs:schema
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns:tns3="http://oms.soap.equinix.codeguru.code/shellorder"
+			xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+			xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns="http://schemas.xmlsoap.org/wsdl/">
+			<xs:import
+				namespace="http://example.equinix/soap"
+				schemaLocation="ShellOrderRequest.xsd" />
+		</xs:schema>
+	</types>
+	<message name="shellOrderRequestInputType">
+		<part name="ShellOrderRequest" type="tns3:ShellOrderRequestType">
+		</part>
+	</message>
+	<message name="shellOrderRequestOutputType">
+		<part name="response" type="tns3:ShellOrderResponseType">
+		</part>
+	</message>
+	<portType name="shellOrderInterface">
+		<documentation>This interface exposes methods to place shell order
+			request
+		</documentation>
+		<operation name="shellorder">
+			<documentation>This operation takes in a parameter ShellOrderRequest
+				type and return ShellOrderResponse type
+			</documentation>
+			<input message="tns3:shellOrderRequestInputType" name="request">
+			</input>
+			<output message="tns3:shellOrderRequestOutputType"
+				name="response">
+			</output>
+		</operation>
+	</portType>
+	<binding name="shellOrderSoapHttpBinding"
+		type="tns3:shellOrderInterface">
+		<soap12:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="shellorder">
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+	</binding>
+	<service name="shellOrderService">
+		<port binding="tns3:shellOrderSoapHttpBinding"
+			name="shellOrderInterface">
+			<soap:address
+				location="http://localhost:8080/shellorder/services/shellorder" />
+		</port>
+	</service>
+</definitions>

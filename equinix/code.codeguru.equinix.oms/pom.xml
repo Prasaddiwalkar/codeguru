@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>2.2.4.RELEASE</version>
+      <relativePath /> <!-- lookup parent from repository -->
+   </parent>
+   <groupId>code.codeguru.equinix.oms</groupId>
+   <artifactId>code.codeguru.equinix.oms</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+   <name>Order Management System</name>
+   <description>Order Management System</description>
+   <properties>
+      <java.version>1.8</java.version>
+      <spring.fox.version>3.0.0</spring.fox.version>
+      <cxf.version>3.3.3</cxf.version>
+   </properties>
+   <dependencies>
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-data-jpa</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+         <scope>runtime</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-test</artifactId>
+         <scope>test</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter -->
+      <dependency>
+         <groupId>org.springdoc</groupId>
+         <artifactId>springdoc-openapi-ui</artifactId>
+         <version>1.6.7</version>
+      </dependency>
+
+      <dependency>
+         <groupId>com.google.code.gson</groupId>
+         <artifactId>gson</artifactId>
+         <scope>test</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+      <dependency>
+         <groupId>io.cucumber</groupId>
+         <artifactId>cucumber-java</artifactId>
+         <version>7.2.3</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+      <dependency>
+         <groupId>io.cucumber</groupId>
+         <artifactId>cucumber-junit</artifactId>
+         <version>7.2.3</version>
+         <scope>test</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
+      <dependency>
+         <groupId>io.swagger.core.v3</groupId>
+         <artifactId>swagger-annotations</artifactId>
+         <version>2.2.0</version>
+      </dependency>
+      <!-- Swagger dependencies for REST documentation -->
+      <dependency>
+         <groupId>io.springfox</groupId>
+         <artifactId>springfox-swagger2</artifactId>
+         <version>${spring.fox.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>io.springfox</groupId>
+         <artifactId>springfox-swagger-ui</artifactId>
+         <version>${spring.fox.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>io.springfox</groupId>
+         <artifactId>springfox-spring-webmvc</artifactId>
+         <version>${spring.fox.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+      <dependency>
+         <groupId>com.fasterxml.jackson.dataformat</groupId>
+         <artifactId>jackson-dataformat-xml</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.glassfish.jaxb</groupId>
+         <artifactId>jaxb-runtime</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.cxf</groupId>
+         <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
+         <version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.cxf</groupId>
+         <artifactId>cxf-rt-features-logging</artifactId>
+         <version>${cxf.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web-services</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-devtools</artifactId>
+         <scope>runtime</scope>
+         <optional>true</optional>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-reactor -->
+      <dependency>
+         <groupId>io.github.resilience4j</groupId>
+         <artifactId>resilience4j-reactor</artifactId>
+         <version>1.7.1</version>
+      </dependency>
+      <dependency>
+         <groupId>io.github.resilience4j</groupId>
+         <artifactId>resilience4j-spring-boot2</artifactId>
+         <version>1.7.0</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-actuator</artifactId>
+         <version>2.4.1</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+      <dependency>
+         <groupId>org.projectlombok</groupId>
+         <artifactId>lombok</artifactId>
+         <version>1.18.24</version>
+         <scope>provided</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop -->
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-aop</artifactId>
+         <version>2.6.7</version>
+      </dependency>
+   </dependencies>
+
+   <!-- tag::profile[] -->
+   <profiles>
+      <profile>
+         <id>java11</id>
+         <activation>
+            <jdk>[11,)</jdk>
+         </activation>
+
+         <dependencies>
+            <dependency>
+               <groupId>org.glassfish.jaxb</groupId>
+               <artifactId>jaxb-runtime</artifactId>
+            </dependency>
+         </dependencies>
+      </profile>
+   </profiles>
+   <!-- end::profile[] -->
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.jvnet.jaxb2.maven2</groupId>
+            <artifactId>maven-jaxb2-plugin</artifactId>
+            <version>0.13.2</version>
+            <executions>
+               <execution>
+                  <goals>
+                     <goal>generate</goal>
+                  </goals>
+               </execution>
+            </executions>
+            <configuration>
+               <generatePackage>code.codeguru.equinix.soap.oms.shellorder</generatePackage>
+               <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
+               <schemaDirectory>${basedir}/src/main/resources/wsdl</schemaDirectory>
+               <schemaIncludes>
+                  <include>*.wsdl</include>
+               </schemaIncludes>
+               <!-- <args> -->
+               <!-- <arg>-Xannotate</arg> -->
+               <!-- <arg>-XremoveAnnotation</arg> -->
+               <!-- </args> -->
+               <plugins>
+                  <plugin>
+                     <groupId>org.jvnet.jaxb2_commons</groupId>
+                     <artifactId>jaxb2-basics-annotate</artifactId>
+                     <version>1.1.0</version>
+                  </plugin>
+               </plugins>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+
+
+</project>
