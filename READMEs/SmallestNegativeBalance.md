@@ -1,4 +1,4 @@
-# codingguru
+# Code Guru
 
 ## Smallest Negative Balance
 
