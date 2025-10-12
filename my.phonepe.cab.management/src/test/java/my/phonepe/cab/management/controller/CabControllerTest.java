@@ -1,5 +1,7 @@
 package my.phonepe.cab.management.controller;
 
+import my.phonepe.cab.management.services.CabService;
+
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,17 +11,13 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import my.phonepe.cab.management.services.CabService;
-
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)
 @WebMvcTest(CabController.class)
 public class CabControllerTest {
-    @Autowired
-    private MockMvc mockMvc;
+    @Autowired private MockMvc mockMvc;
 
-    @MockBean
-    CabService cabService;
+    @MockBean CabService cabService;
 
     private final String REGISTER_URL = "/cab/register";
 
@@ -30,22 +28,14 @@ public class CabControllerTest {
     private final String IDLETIME_URL = "/cab/idletime";
 
     @Test
-    public void testRegisterCab() throws Exception {
-
-    }
+    public void testRegisterCab() throws Exception {}
 
     @Test
-    public void testBookCab() throws Exception {
-
-    }
+    public void testBookCab() throws Exception {}
 
     @Test
-    public void testDeactivateCab() throws Exception {
-
-    }
+    public void testDeactivateCab() throws Exception {}
 
     @Test
-    public void testGetIdleTime() throws Exception {
-
-    }
+    public void testGetIdleTime() throws Exception {}
 }

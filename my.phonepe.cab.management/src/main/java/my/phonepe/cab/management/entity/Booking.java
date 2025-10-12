@@ -1,13 +1,13 @@
 package my.phonepe.cab.management.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.MapKey;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "booking")
@@ -32,21 +32,24 @@ public class Booking {
 
     @MapKey(name = "user_id")
     @JsonProperty("user_id")
-//	@OneToOne(mappedBy = "user_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = User.class)
+    //	@OneToOne(mappedBy = "user_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL,
+    // targetEntity = User.class)
     private Integer user_id;
 
     @MapKey(name = "driver_id")
     @JsonProperty("driver_id")
-//	@OneToOne(mappedBy = "user_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = User.class)
+    //	@OneToOne(mappedBy = "user_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL,
+    // targetEntity = User.class)
     private Integer driver_id;
 
     @JoinColumn(name = "cab_id")
-//	@OneToMany(mappedBy = "cab_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Cab.class)
+    //	@OneToMany(mappedBy = "cab_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL,
+    // targetEntity = Cab.class)
     @OneToOne
     private Cab cab_id;
 
-//    @OneToOne(mappedBy = "")
-//    private Trip trip;
+    //    @OneToOne(mappedBy = "")
+    //    private Trip trip;
 
     public Cab getCab_id() {
         return cab_id;
@@ -95,5 +98,4 @@ public class Booking {
     public void setDriver_id(Integer driver_id) {
         this.driver_id = driver_id;
     }
-
 }

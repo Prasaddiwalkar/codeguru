@@ -1,7 +1,7 @@
 package code.codeguru.interview.sort;
 
 // UBS Interview
-// 
+//
 public class BubbleSort {
 
     public void sort(int[] inputArr) {

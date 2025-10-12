@@ -1,18 +1,17 @@
 package my.phonepe.cab.management.services;
 
-import java.util.Date;
+import my.phonepe.cab.management.entity.Trip;
+import my.phonepe.cab.management.repository.TripRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import my.phonepe.cab.management.entity.Trip;
-import my.phonepe.cab.management.repository.TripRepository;
+import java.util.Date;
 
 @Service
 public class TripService {
 
-    @Autowired
-    TripRepository tripRepo;
+    @Autowired TripRepository tripRepo;
 
     public Trip startTrip(Trip trip, String state) {
 
@@ -34,5 +33,4 @@ public class TripService {
         trip.setEnd_time(new Date());
         return tripRepo.save(trip);
     }
-
 }

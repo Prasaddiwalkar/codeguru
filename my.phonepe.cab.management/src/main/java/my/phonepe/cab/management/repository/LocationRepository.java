@@ -1,11 +1,11 @@
 package my.phonepe.cab.management.repository;
 
-import java.util.List;
+import my.phonepe.cab.management.entity.Location;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import my.phonepe.cab.management.entity.Location;
+import java.util.List;
 
 public interface LocationRepository extends CrudRepository<Location, Integer> {
 

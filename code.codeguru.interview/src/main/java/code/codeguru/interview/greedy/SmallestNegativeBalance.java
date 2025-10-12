@@ -10,33 +10,53 @@ import java.util.Map;
 // KLA interview
 public class SmallestNegativeBalance {
 
+    /**
+     * Calculates the list of people with the smallest negative balance after processing all debts.
+     * Each debt is represented as an ArrayList of Strings: [debtor, creditor, amount]. If nobody
+     * has a negative balance, returns a list with "Nobody has a negative balance".
+     *
+     * @param debts List of debts, where each debt is a list: [debtor, creditor, amount]
+     * @return Sorted list of names with the smallest negative balance, or a list with a single
+     *     message
+     */
     public List<String> smallestNegativeBalance(List<ArrayList<String>> debts) {
 
         Map<String, Integer> smallestNegativeMap = new HashMap<String, Integer>();
 
-        debts.forEach((debt) -> {
-            smallestNegativeMap.put(debt.get(1),
-                    smallestNegativeMap.getOrDefault(debt.get(1), 0) + Integer.parseInt(debt.get(2)));
+        // Process each debt: update balances for debtor and creditor
+        debts.forEach(
+                (debt) -> {
+                    // Increase creditor's balance by the debt amount
+                    smallestNegativeMap.put(
+                            debt.get(1),
+                            smallestNegativeMap.getOrDefault(debt.get(1), 0)
+                                    + Integer.parseInt(debt.get(2)));
 
-            smallestNegativeMap.put(debt.get(0),
-                    smallestNegativeMap.getOrDefault(debt.get(0), 0) - Integer.parseInt(debt.get(2)));
-        });
+                    // Decrease debtor's balance by the debt amount
+                    smallestNegativeMap.put(
+                            debt.get(0),
+                            smallestNegativeMap.getOrDefault(debt.get(0), 0)
+                                    - Integer.parseInt(debt.get(2)));
+                });
 
-        // get minimum
+        // Find the minimum balance
         int min = Collections.min(smallestNegativeMap.values());
 
         List<String> output = new ArrayList<String>();
 
+        // If no one has a negative balance, return the message
         if (Collections.frequency(smallestNegativeMap.values(), min) <= 0) {
             output.add("Nobody has a negative balance");
             return output;
         }
 
-        smallestNegativeMap.forEach((key, value) -> {
-            if (value == min) {
-                output.add(key);
-            }
-        });
+        // Collect all names with the minimum balance
+        smallestNegativeMap.forEach(
+                (key, value) -> {
+                    if (value == min) {
+                        output.add(key);
+                    }
+                });
 
         Collections.sort(output);
         return output;

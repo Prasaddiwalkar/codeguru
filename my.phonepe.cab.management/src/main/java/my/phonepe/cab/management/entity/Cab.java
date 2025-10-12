@@ -1,5 +1,7 @@
 package my.phonepe.cab.management.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -9,9 +11,7 @@ import javax.persistence.MapKey;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-enum States{
+enum States {
     ON_TRIP,
     IDLE
 }
@@ -39,7 +39,6 @@ public class Cab {
     @OneToOne
     private Location base_location;
 
-    
     @MapKey(name = "state")
     @JsonProperty("state")
     private String state;
@@ -103,12 +102,12 @@ public class Cab {
     }
 
     public String getState() {
-        
+
         return state;
     }
 
     public void setState(String state) {
-        
+
         this.state = state;
     }
 

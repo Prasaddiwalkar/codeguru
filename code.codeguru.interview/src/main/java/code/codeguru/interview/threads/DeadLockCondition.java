@@ -1,7 +1,6 @@
 package code.codeguru.interview.threads;
 
 import java.util.Random;
-import java.util.concurrent.Semaphore;
 
 public class DeadLockCondition {
     public static void main(String[] args) {
@@ -64,7 +63,8 @@ public class DeadLockCondition {
 
         public void takeRoadA() {
             synchronized (roadA) {
-                System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
+                System.out.println(
+                        "Road A is locked by thread " + Thread.currentThread().getName());
 
                 synchronized (roadB) {
                     System.out.println("Train is passing through road A");
@@ -78,7 +78,8 @@ public class DeadLockCondition {
 
         public void takeRoadB() {
             synchronized (roadB) {
-                System.out.println("Road B is locked by thread " + Thread.currentThread().getName());
+                System.out.println(
+                        "Road B is locked by thread " + Thread.currentThread().getName());
 
                 synchronized (roadA) {
                     System.out.println("Train is passing through road B");

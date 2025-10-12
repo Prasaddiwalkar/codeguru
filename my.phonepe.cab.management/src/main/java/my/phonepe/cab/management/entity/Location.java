@@ -1,11 +1,11 @@
 package my.phonepe.cab.management.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.MapKey;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "location")
@@ -95,5 +95,4 @@ public class Location {
     public void setActive(String active) {
         this.active = active;
     }
-
 }

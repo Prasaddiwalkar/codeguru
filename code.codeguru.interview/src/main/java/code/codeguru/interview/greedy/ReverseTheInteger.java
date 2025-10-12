@@ -16,9 +16,9 @@ public class ReverseTheInteger {
 
     public boolean isNumberPalindrome(int input) {
 
-//		if (new StringBuffer(String.valueOf(input)).reverse().toString().equals(input)) {
-//			return true;
-//		}
+        //		if (new StringBuffer(String.valueOf(input)).reverse().toString().equals(input)) {
+        //			return true;
+        //		}
 
         int tempInput = input;
         int reverse = 0;

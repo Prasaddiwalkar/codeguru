@@ -6,7 +6,9 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import java.util.Date;
+import my.phonepe.cab.management.entity.Location;
+import my.phonepe.cab.management.entity.User;
+import my.phonepe.cab.management.services.UserService;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -21,20 +23,16 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import my.phonepe.cab.management.entity.Location;
-import my.phonepe.cab.management.entity.User;
-import my.phonepe.cab.management.services.UserService;
+import java.util.Date;
 
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)
 @WebMvcTest(UserController.class)
 public class UserControllerTest {
 
-    @Autowired
-    private MockMvc mockMvc;
+    @Autowired private MockMvc mockMvc;
 
-    @MockBean
-    UserService userService;
+    @MockBean UserService userService;
 
     private final String URL = "/user/register";
 
@@ -61,9 +59,15 @@ public class UserControllerTest {
         when(userService.addOrUpdate(any(User.class))).thenReturn(user);
 
         // Execute
-        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post(URL)
-                .contentType(MediaType.APPLICATION_JSON_VALUE).accept(MediaType.APPLICATION_JSON_VALUE)
-                .content(my.phonepe.cab.management.TestUtils.objectToJson(user))).andReturn();
+        MvcResult result =
+                mockMvc.perform(
+                                MockMvcRequestBuilders.post(URL)
+                                        .contentType(MediaType.APPLICATION_JSON_VALUE)
+                                        .accept(MediaType.APPLICATION_JSON_VALUE)
+                                        .content(
+                                                my.phonepe.cab.management.TestUtils.objectToJson(
+                                                        user)))
+                        .andReturn();
 
         // verify
         int status = result.getResponse().getStatus();
@@ -72,19 +76,16 @@ public class UserControllerTest {
         // verify that service method was called once
         verify(userService).addOrUpdate(any(User.class));
 
-        User resultUser = my.phonepe.cab.management.TestUtils.jsonToObject(result.getResponse().getContentAsString(),
-                User.class);
+        User resultUser =
+                my.phonepe.cab.management.TestUtils.jsonToObject(
+                        result.getResponse().getContentAsString(), User.class);
         assertNotNull(resultUser);
         assertEquals("Prasad", resultUser.getFirst_name().toString());
     }
 
     @Test
-    public void getAllUsersTest() {
-
-    }
+    public void getAllUsersTest() {}
 
     @Test
-    public void deactivateFUsersTest() {
-
-    }
+    public void deactivateFUsersTest() {}
 }

@@ -1,5 +1,7 @@
 package my.phonepe.cab.management.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -8,8 +10,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.MapKey;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "user")
@@ -26,7 +26,7 @@ public class User {
 
     @JoinColumn(name = "base_location")
     @OneToOne // (mappedBy = "location_id", fetch = FetchType.LAZY, cascade = CascadeType.ALL,
-              // targetEntity = Location.class)
+    // targetEntity = Location.class)
     public Location base_location;
 
     @MapKey(name = "first_name")
@@ -148,5 +148,4 @@ public class User {
     public void setDob(Date dob) {
         this.dob = dob;
     }
-
 }

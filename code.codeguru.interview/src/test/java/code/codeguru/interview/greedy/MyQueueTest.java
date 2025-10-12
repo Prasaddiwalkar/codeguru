@@ -1,24 +1,26 @@
 package code.codeguru.interview.greedy;
 
-import org.junit.Before;
-import org.junit.Test;
-
 import code.codeguru.interview.stack.MyQueue;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class MyQueueTest {
 
-	MyQueue queue;
+    MyQueue queue;
 
-	@Before
-	public void setup() {
-		queue = new MyQueue();
-	}
+    @BeforeAll
+    public void setup() {
+        queue = new MyQueue();
+    }
 
-	@Test
-	public void testMyQueue() {
+    @Test
+    public void testMyQueue() {
 
-		queue.add(3);
-		queue.add(4);
-		queue.add(5);
-	}
+        queue.add(3);
+        queue.add(4);
+        queue.add(5);
+    }
 }

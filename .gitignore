@@ -1,11 +1,99 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+# Maven
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/buildNumber.properties
+**/.mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+**/.mvn/wrapper/maven-wrapper.jar
+
+# macOS
+**/.DS_Store
+
+# IntelliJ IDEA
+**/.idea/
+**/*.iml
+**/*.ipr
+**/*.iws
+
+# Compiled class file
+**/*.class
+
+# Log files
+**/logs
+**/*.log
+**/*.gz
+
+# BlueJ files
+**/*.ctxt
+
+# Mobile Tools for Java (J2ME)
+**/.mtj.tmp/
+
+# Maven wrapper
+**/mvnw
+**/mvnw.cmd
+
+# Package Files
+**/*.jar
+**/*.war
+**/*.nar
+**/*.ear
+**/*.zip
+**/*.tar.gz
+**/*.rar
+
+# Virtual machine crash logs
+**/hs_err_pid*
+
+# Test output and IDE metadata
+**/test-output
+**/.settings
+**/.metadata
+
+# Terraform
+**/*.tfstate
+**/*.tfstate.backup
+**/.terraform/
+
+# Miscellaneous
+**/be
+**/_annotations.idx
+**/JavaBin
+**/bin
+**/.com.tibco.bw.rad
+**/.svn
+**/.bsProject
+**/*_env
+
+# Spring Tool Suite (STS)
+**/.apt_generated
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings
+**/.springBeans
+**/.sts4-cache
+
+# NetBeans
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
+**/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Misc
+**/HELP.md
+
+# VS Code
+**/.vscode/
+
+# Custom
+**/clientCer.p12

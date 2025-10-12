@@ -10,7 +10,7 @@ You are working on new application for recording debts. This program allows user
 - If multipel people have the smallest negative balance, return the list in alphabetical order.
 - If nobody has negative balance, return the string array ["Nobody has a negative balance"].
 
-Example 
+Example
 n = 6
 
 debts = ['Alex Blake 2', 'Blake Alex 2', 'Casey Alex 5'. ' Blake Casey 7', 'Alex Blake 4', 'Alex Casey 4']
