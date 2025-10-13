@@ -63,6 +63,10 @@ public class SmallestNegativeBalance {
 
     public List<String> smallestNegativeBalanceBiFunction(List<ArrayList<String>> debts) {
 
+        if(debts ==null || debts.size() ==0){
+            return List.of("Nobody has a negative balance");
+        }
+
         Map<String, Integer> smallestNegativeMap = new HashMap<String, Integer>();
 
         // Process each debt: update balances for debtor and creditor
