@@ -31,7 +31,6 @@ public class SmallestNegativeBalance {
                             debt.get(1),
                             smallestNegativeMap.getOrDefault(debt.get(1), 0)
                                     + Integer.parseInt(debt.get(2)));
-
                     // Decrease debtor's balance by the debt amount
                     smallestNegativeMap.put(
                             debt.get(0),
@@ -50,6 +49,43 @@ public class SmallestNegativeBalance {
             return output;
         }
 
+        // Collect all names with the minimum balance
+        smallestNegativeMap.forEach(
+                (key, value) -> {
+                    if (value == min) {
+                        output.add(key);
+                    }
+                });
+
+        Collections.sort(output);
+        return output;
+    }
+
+    public List<String> smallestNegativeBalanceBiFunction(List<ArrayList<String>> debts) {
+
+        Map<String, Integer> smallestNegativeMap = new HashMap<String, Integer>();
+
+        // Process each debt: update balances for debtor and creditor
+        debts.forEach(
+                (debt) -> {
+                    String debeter = debt.get(0);
+                    String crediter = debt.get(1);
+                    int amount = Integer.parseInt(debt.get(2));
+                    // Increase creditor's balance by the debt amount
+                    smallestNegativeMap.merge(crediter, amount, Integer::sum);
+                    // Decrease debtor's balance by the debt amount
+                    smallestNegativeMap.merge(debeter, -amount, Integer::sum);
+                });
+
+        // Find the minimum balance
+        int min = Collections.min(smallestNegativeMap.values());
+
+        // If no one has a negative balance, return the message
+        if (Collections.frequency(smallestNegativeMap.values(), min) <= 0) {
+            return List.of("Nobody has a negative balance");
+        }
+
+        List<String> output = new ArrayList<String>();
         // Collect all names with the minimum balance
         smallestNegativeMap.forEach(
                 (key, value) -> {
