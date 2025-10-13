@@ -1,5 +1,8 @@
 package code.codeguru.interview.lru;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 public class LRUCache {
@@ -9,7 +12,8 @@ public class LRUCache {
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        this.map = new java.util.HashMap<>();
+        this.map = new HashMap<>();
+        List<String> test = new LinkedList<String>();
         this.dll = new DoublyLinkedList();
     }
 
