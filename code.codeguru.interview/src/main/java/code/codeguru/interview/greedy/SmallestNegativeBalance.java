@@ -68,13 +68,13 @@ public class SmallestNegativeBalance {
         // Process each debt: update balances for debtor and creditor
         debts.forEach(
                 (debt) -> {
-                    String debeter = debt.get(0);
-                    String crediter = debt.get(1);
+                    String debater = debt.get(0);
+                    String creditor = debt.get(1);
                     int amount = Integer.parseInt(debt.get(2));
                     // Increase creditor's balance by the debt amount
-                    smallestNegativeMap.merge(crediter, amount, Integer::sum);
+                    smallestNegativeMap.merge(creditor, amount, Integer::sum);
                     // Decrease debtor's balance by the debt amount
-                    smallestNegativeMap.merge(debeter, -amount, Integer::sum);
+                    smallestNegativeMap.merge(debater, -amount, Integer::sum);
                 });
 
         // Find the minimum balance
