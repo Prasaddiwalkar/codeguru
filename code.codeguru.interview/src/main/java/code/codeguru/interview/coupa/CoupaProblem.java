@@ -1,4 +1,4 @@
-package code.codeguru.coupa;
+package code.codeguru.interview.coupa;
 
 public class CoupaProblem {
 
