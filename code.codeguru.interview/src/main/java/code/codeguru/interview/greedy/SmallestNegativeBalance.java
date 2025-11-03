@@ -1,10 +1,6 @@
 package code.codeguru.interview.greedy;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 // UBS preparation
 // KLA interview
@@ -90,14 +86,21 @@ public class SmallestNegativeBalance {
         }
 
         List<String> output = new ArrayList<String>();
-        // Collect all names with the minimum balance
+
+//       List<String> list = smallestNegativeMap.entrySet().stream().filter(
+//             e -> e.getValue() == min).map(Map.Entry::getKey).toList();
+       // Collect all names with the minimum balance
         smallestNegativeMap.forEach(
                 (key, value) -> {
                     if (value == min) {
                         output.add(key);
                     }
                 });
+//        ASC
+//       output.sort(Comparator.naturalOrder());
 
+//       DESC
+//       output.sort(Comparator.reverseOrder());
         Collections.sort(output);
         return output;
     }
