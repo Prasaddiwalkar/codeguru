@@ -10,13 +10,14 @@ import java.util.List;
 public class MoveElementToEndTest {
 
     MoveElementToEnd elementToEnd;
+
     @BeforeAll
-    public void setup(){
+    public void setup() {
         elementToEnd = new MoveElementToEnd();
     }
 
     @Test
-    public void moveElementToEnd(){
+    public void moveElementToEnd() {
         elementToEnd.moveElementToEnd(List.of(2, 1, 2, 2, 2, 3, 4, 2), 2);
     }
 }
