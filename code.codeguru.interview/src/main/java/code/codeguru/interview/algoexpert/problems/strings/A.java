@@ -1,4 +1,3 @@
 package code.codeguru.interview.algoexpert.problems.strings;
 
-public class A {
-}
+public class A {}

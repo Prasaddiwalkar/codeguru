@@ -11,7 +11,8 @@ public class DLinkedList<T> {
         T value;
         Node<T> next;
         Node<T> prev;
-        Node(T value){
+
+        Node(T value) {
             this.value = value;
             this.next = null;
             this.prev = null;
@@ -23,40 +24,40 @@ public class DLinkedList<T> {
     private int size;
     private Map<Integer, Node<T>> map;
 
-    public DLinkedList(T value ){
+    public DLinkedList(T value) {
 
-//        head = new Node<>();
+        //        head = new Node<>();
     }
 
     // ---- Common methods ----
     // Add methods
-//    public void addFirst(T data);
-//    public void addLast(T data);
-//    public void addAtIndex(int index, T data);
-//
-//    // Remove methods
-//    public T removeFirst();
-//    public T removeLast();
-//    public T removeAtIndex(int index);
-//    public boolean remove(T data);
-//
-//    // Get methods
-//    public T getFirst();
-//    public T getLast();
-//    public T getAtIndex(int index);
-//
-//    // Utility methods
-//    public boolean isEmpty();
-//    public int size();
-//    public void clear();
-//
-//    // Traversal methods
-//    public void printForward();
-//    public void printBackward();
-//
-//    // Search
-//    public boolean contains(T data);
-//    public int indexOf(T data);
-//    public int lastIndexOf(T data);
+    //    public void addFirst(T data);
+    //    public void addLast(T data);
+    //    public void addAtIndex(int index, T data);
+    //
+    //    // Remove methods
+    //    public T removeFirst();
+    //    public T removeLast();
+    //    public T removeAtIndex(int index);
+    //    public boolean remove(T data);
+    //
+    //    // Get methods
+    //    public T getFirst();
+    //    public T getLast();
+    //    public T getAtIndex(int index);
+    //
+    //    // Utility methods
+    //    public boolean isEmpty();
+    //    public int size();
+    //    public void clear();
+    //
+    //    // Traversal methods
+    //    public void printForward();
+    //    public void printBackward();
+    //
+    //    // Search
+    //    public boolean contains(T data);
+    //    public int indexOf(T data);
+    //    public int lastIndexOf(T data);
 
 }

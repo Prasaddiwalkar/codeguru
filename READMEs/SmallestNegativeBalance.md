@@ -2,7 +2,8 @@
 
 ## Smallest Negative Balance
 
-You are working on new application for recording debts. This program allows users to create groups that show all records of debts between the group members. Give the group debt records(including the borrower name, lender name and debt amout). who in the group has the smallest negative balance?
+You are working on new application for recording debts. This program allows users to create groups that show all records of debts between the group members.
+Give the group debt records (including the borrower name, lender name and debt amount). Who in the group has the smallest negative balance?
 
 ### Notes :-
 
@@ -25,7 +26,6 @@ There are 6 debt records as shown in the table below:
 | Blake       | Casey       | 7      |
 | Alex        | Blake       | 4      |
 | Alex        | Casey       | 4      |
-
 
 - The first, fifth, and sixth entries decrease Alex's balance because Alex is a borrower. The second and third entries increase it because Alex is a lender. Alex's balance is (2+5)-(2+4+4)=7-10=-3.
 - Blake is a lender in the first and fifth entries and a borrower in the second and fourth entries. Thus, Blake's balance is (2+4)-(2+7) = 6-9 = -3

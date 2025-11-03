@@ -22,7 +22,7 @@ Complete the function groupSort in the editor below.
 groupSort has the following parameter(s):
 int arr[n}: an array of integers
 Returns:
-int[n][2]: a 2-d array of integers sorted as described
+`int[n][2]`: a 2-d array of integers sorted as described
 
 Constraints
 

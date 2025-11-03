@@ -1,3 +1,5 @@
+# DSA Coding Patterns
+
 25 DSA coding patterns that cover most interview questions:
 
 1. Two Pointers

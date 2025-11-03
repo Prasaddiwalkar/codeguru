@@ -1,6 +1,5 @@
 package code.codeguru.interview.coupa;
 
-import code.codeguru.interview.coupa.CoupaProblem;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

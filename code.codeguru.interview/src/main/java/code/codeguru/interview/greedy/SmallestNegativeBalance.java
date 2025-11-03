@@ -59,7 +59,7 @@ public class SmallestNegativeBalance {
 
     public List<String> smallestNegativeBalanceBiFunction(List<ArrayList<String>> debts) {
 
-        if(debts ==null || debts.size() ==0){
+        if (debts == null || debts.size() == 0) {
             return List.of("Nobody has a negative balance");
         }
 
@@ -87,20 +87,20 @@ public class SmallestNegativeBalance {
 
         List<String> output = new ArrayList<String>();
 
-//       List<String> list = smallestNegativeMap.entrySet().stream().filter(
-//             e -> e.getValue() == min).map(Map.Entry::getKey).toList();
-       // Collect all names with the minimum balance
+        //       List<String> list = smallestNegativeMap.entrySet().stream().filter(
+        //             e -> e.getValue() == min).map(Map.Entry::getKey).toList();
+        // Collect all names with the minimum balance
         smallestNegativeMap.forEach(
                 (key, value) -> {
                     if (value == min) {
                         output.add(key);
                     }
                 });
-//        ASC
-//       output.sort(Comparator.naturalOrder());
+        //        ASC
+        //       output.sort(Comparator.naturalOrder());
 
-//       DESC
-//       output.sort(Comparator.reverseOrder());
+        //       DESC
+        //       output.sort(Comparator.reverseOrder());
         Collections.sort(output);
         return output;
     }

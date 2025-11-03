@@ -1,7 +1,5 @@
 package code.codeguru.interview.tree;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class TreeNode<T> {
     public T value;
     public TreeNode<T> left;
