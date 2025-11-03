@@ -17,6 +17,7 @@ public class NonConstructibleChangeTest {
     @Test
     public void nonConstructibleChangeTest() {
 
-        change.nonConstructibleChange();
+        int[] coins = {5, 7, 1, 1, 2, 3, 22};
+        change.nonConstructibleChange(coins);
     }
 }
