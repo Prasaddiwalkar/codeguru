@@ -28,7 +28,7 @@ public class LongestPeak {
     public int longestPeak(int[] array) {
         // Write your code here.
         if (array == null || array.length < 3) {
-            return -1;
+            return 0;
         }
 
         int longestPeakLenght = 0;
