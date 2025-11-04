@@ -15,5 +15,8 @@ public class FirstDuplicateValueTest {
     }
 
     @Test
-    public void setFirstDuplicateValueTest() {}
+    public void setFirstDuplicateValueTest() {
+        int[] array = {2, 1, 5, 2, 3, 3, 4};
+        firstDuplicateValue.firstDuplicateValue(array);
+    }
 }
