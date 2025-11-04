@@ -1,5 +1,11 @@
 # Sorted Squared Array
 
+**Difficulty:**
+
+**Category:** Arrays
+
+---
+
 Given a sorted array of integers, write a function that returns a new array containing the squares of each number, also sorted in ascending order.
 
 ## Sample Input

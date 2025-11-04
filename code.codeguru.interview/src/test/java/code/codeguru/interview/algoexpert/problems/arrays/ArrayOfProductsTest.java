@@ -18,5 +18,7 @@ public class ArrayOfProductsTest {
     public void arrayOfProductsTest() {
         int[] array = {5, 1, 4, 2};
         arrayOfProducts.arrayOfProducts2(array);
+
+        arrayOfProducts.arrayOfProducts1(array);
     }
 }
