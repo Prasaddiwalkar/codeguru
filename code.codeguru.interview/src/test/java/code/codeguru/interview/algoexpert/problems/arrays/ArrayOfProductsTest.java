@@ -15,5 +15,8 @@ public class ArrayOfProductsTest {
     }
 
     @Test
-    public void arrayOfProductsTest() {}
+    public void arrayOfProductsTest() {
+        int[] array = {5, 1, 4, 2};
+        arrayOfProducts.arrayOfProducts2(array);
+    }
 }
