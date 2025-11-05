@@ -10,12 +10,10 @@ public class MergeOverLappingIntervalsTest {
     MergeOverLappingIntervals intervals;
 
     @BeforeAll
-    public void setup(){
+    public void setup() {
         intervals = new MergeOverLappingIntervals();
     }
 
     @Test
-    public void mergeOverLappingIntervalsTest(){
-
-    }
+    public void mergeOverLappingIntervalsTest() {}
 }
