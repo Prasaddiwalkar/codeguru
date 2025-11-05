@@ -25,102 +25,102 @@ O(n) time | O(n) space - where n is the length of nums
 
 ### Test Case 1
 
-```json
+```text
 { "nums": [] }
 ```
 
 ### Test Case 2
 
-```json
+```text
 { "nums": [0] }
 ```
 
 ### Test Case 3
 
-```json
+```text
 { "nums": [1] }
 ```
 
 ### Test Case 4
 
-```json
+```text
 { "nums": [1, 2, 3] }
 ```
 
 ### Test Case 5
 
-```json
+```text
 { "nums": [1, 1, 1] }
 ```
 
 ### Test Case 6
 
-```json
+```text
 { "nums": [-1, -1, -1] }
 ```
 
 ### Test Case 7
 
-```json
+```text
 { "nums": [0, 0, 0] }
 ```
 
 ### Test Case 8
 
-```json
+```text
 { "nums": [1, 2, -2, 3] }
 ```
 
 ### Test Case 9
 
-```json
+```text
 { "nums": [2, -2] }
 ```
 
 ### Test Case 10
 
-```json
+```text
 { "nums": [-1, 2, 3, 4, -5, -3, 1, 2] }
 ```
 
 ### Test Case 11
 
-```json
+```text
 { "nums": [-2, -3, -1, 2, 3, 4, -5, -3, 1, 2] }
 ```
 
 ### Test Case 12
 
-```json
+```text
 { "nums": [2, 3, 4, -5, -3, 4, 5] }
 ```
 
 ### Test Case 13
 
-```json
+```text
 { "nums": [2, 3, 4, -5, -3, 5, 5] }
 ```
 
 ### Test Case 14
 
-```json
+```text
 { "nums": [1, 2, 3, 4, 0, 5, 6, 7] }
 ```
 
 ### Test Case 15
 
-```json
+```text
 { "nums": [1, 2, 3, -2, -1] }
 ```
 
 ### Test Case 16
 
-```json
+```text
 { "nums": [-8, -22, 104, 73, -120, 53, 22, -12, 1, 14, -90, 13, -22] }
 ```
 
 ### Test Case 17
 
-```json
+```text
 { "nums": [-8, -22, 104, 73, -120, 53, 22, 20, 25, -12, 1, 14, -90, 13, -22] }
 ```

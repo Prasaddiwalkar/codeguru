@@ -49,7 +49,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 1
 
-```json
+```text
 {
   "calendar1": [["9:00", "10:30"], ["12:00", "13:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["9:00", "20:00"],
@@ -61,7 +61,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 2
 
-```json
+```text
 {
   "calendar1": [["9:00", "10:30"], ["12:00", "13:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["9:00", "20:00"],
@@ -73,7 +73,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 3
 
-```json
+```text
 {
   "calendar1": [["9:00", "10:30"], ["12:00", "13:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["9:00", "20:00"],
@@ -85,7 +85,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 4
 
-```json
+```text
 {
   "calendar1": [["9:00", "10:30"], ["12:00", "13:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["8:00", "20:00"],
@@ -97,7 +97,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 5
 
-```json
+```text
 {
   "calendar1": [["8:00", "10:30"], ["8:00", "10:30"], ["11:30", "13:00"], ["14:00", "16:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["8:00", "18:00"],
@@ -109,7 +109,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 6
 
-```json
+```text
 {
   "calendar1": [["10:00", "10:30"], ["10:45", "11:15"], ["11:30", "13:00"], ["14:15", "16:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["9:30", "20:00"],
@@ -121,7 +121,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 7
 
-```json
+```text
 {
   "calendar1": [["10:00", "10:30"], ["10:45", "11:15"], ["11:30", "13:00"], ["14:15", "16:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["9:30", "20:00"],
@@ -133,7 +133,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 8
 
-```json
+```text
 {
   "calendar1": [["10:00", "10:30"], ["10:45", "11:15"], ["11:30", "13:00"], ["14:15", "16:00"], ["16:00", "18:00"]],
   "dailyBounds1": ["9:30", "20:00"],
@@ -145,7 +145,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 9
 
-```json
+```text
 {
   "calendar1": [],
   "dailyBounds1": ["9:30", "20:00"],
@@ -157,7 +157,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 10
 
-```json
+```text
 {
   "calendar1": [],
   "dailyBounds1": ["9:00", "16:30"],
@@ -169,7 +169,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 11
 
-```json
+```text
 {
   "calendar1": [],
   "dailyBounds1": ["9:30", "16:30"],
@@ -181,7 +181,7 @@ O(c1 + c2) time | O(c1 + c2) space, where c1 and c2 are the counts of meetings i
 
 ### Test Case 12
 
-```json
+```text
 {
   "calendar1": [["7:00", "7:45"], ["8:15", "8:30"], ["9:00", "10:30"], ["12:00", "14:00"], ["14:00", "15:00"], ["15:15", "15:30"], ["16:30", "18:30"], ["20:00", "21:00"]],
   "dailyBounds1": ["6:30", "22:00"],

@@ -22,7 +22,7 @@ array = [-4, -1, 0, 3, 10]
 
 ## Test Cases
 
-```json
+```text
 [
   { "array": [1, 2, 3, 5, 6, 8, 9] },
   { "array": [1] },

@@ -42,78 +42,78 @@ O(n) time | O(n) space, where n is the number of integers.
 
 ### Test Case 1
 
-```json
+```text
 { "array": [1, 11, 3, 0, 15, 5, 2, 4, 10, 7, 12, 6] }
 ```
 
 ### Test Case 2
 
-```json
+```text
 { "array": [1] }
 ```
 
 ### Test Case 3
 
-```json
+```text
 { "array": [1, 2] }
 ```
 
 ### Test Case 4
 
-```json
+```text
 { "array": [4, 2, 1, 3] }
 ```
 
 ### Test Case 5
 
-```json
+```text
 { "array": [4, 2, 1, 3, 6] }
 ```
 
 ### Test Case 6
 
-```json
+```text
 { "array": [8, 4, 2, 10, 3, 6, 7, 9, 1] }
 ```
 
 ### Test Case 7
 
-```json
+```text
 { "array": [19, -1, 18, 17, 2, 10, 3, 12, 5, 16, 4, 11, 8, 7, 6, 15, 12, 12, 2, 1, 6, 13, 14] }
 ```
 
 ### Test Case 8
 
-```json
+```text
 { "array": [0, 9, 19, -1, 18, 17, 2, 10, 3, 12, 5, 16, 4, 11, 8, 7, 6, 15, 12, 12, 2, 1, 6, 13, 14] }
 ```
 
 ### Test Case 9
 
-```json
+```text
 { "array": [0, -5, 9, 19, -1, 18, 17, 2, -4, -3, 10, 3, 12, 5, 16, 4, 11, 7, -6, -7, 6, 15, 12, 12, 2, 1, 6, 13, 14, -2] }
 ```
 
 ### Test Case 10
 
-```json
+```text
 { "array": [-7, -7, -7, -7, 8, -8, 0, 9, 19, -1, -3, 18, 17, 2, 10, 3, 12, 5, 16, 4, 11, -6, 8, 7, 6, 15, 12, 12, -5, 2, 1, 6, 13, 14, -4, -2] }
 ```
 
 ### Test Case 11
 
-```json
+```text
 { "array": [1, 1, 1, 3, 4] }
 ```
 
 ### Test Case 12
 
-```json
+```text
 { "array": [-1, 0, 1] }
 ```
 
 ### Test Case 13
 
-```json
+```text
 { "array": [10, 0, 1] }
 ```

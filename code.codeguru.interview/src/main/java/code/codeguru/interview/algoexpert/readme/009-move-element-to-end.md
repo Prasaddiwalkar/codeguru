@@ -39,7 +39,7 @@ O(n) time | O(1) space - where n is the length of the array
 
 Test Case 1
 
-```json
+```text
 {
 "array": [2, 1, 2, 2, 2, 3, 4, 2],
 "toMove": 2
@@ -48,7 +48,7 @@ Test Case 1
 
 Test Case 2
 
-```json
+```text
 {
 "array": [],
 "toMove": 3
@@ -57,7 +57,7 @@ Test Case 2
 
 Test Case 3
 
-```json
+```text
 {
 "array": [1, 2, 4, 5, 6],
 "toMove": 3
@@ -66,7 +66,7 @@ Test Case 3
 
 Test Case 4
 
-```json
+```text
 {
 "array": [3, 3, 3, 3, 3],
 "toMove": 3
@@ -75,7 +75,7 @@ Test Case 4
 
 Test Case 5
 
-```json
+```text
 {
 "array": [3, 1, 2, 4, 5],
 "toMove": 3
@@ -84,7 +84,7 @@ Test Case 5
 
 Test Case 6
 
-```json
+```text
 {
 "array": [1, 2, 4, 5, 3],
 "toMove": 3
@@ -93,7 +93,7 @@ Test Case 6
 
 Test Case 7
 
-```json
+```text
 {
 "array": [1, 2, 3, 4, 5],
 "toMove": 3
@@ -102,7 +102,7 @@ Test Case 7
 
 Test Case 8
 
-```json
+```text
 {
 "array": [2, 4, 2, 5, 6, 2, 2],
 "toMove": 2
@@ -111,7 +111,7 @@ Test Case 8
 
 Test Case 9
 
-```json
+```text
 {
 "array": [5, 5, 5, 5, 5, 5, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
 "toMove": 5
@@ -120,7 +120,7 @@ Test Case 9
 
 Test Case 10
 
-```json
+```text
 {
 "array": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 5, 5, 5, 5, 5, 5],
 "toMove": 5
@@ -129,7 +129,7 @@ Test Case 10
 
 Test Case 11
 
-```json
+```text
 {
 "array": [5, 1, 2, 5, 5, 3, 4, 6, 7, 5, 8, 9, 10, 11, 5, 5, 12],
 "toMove": 5

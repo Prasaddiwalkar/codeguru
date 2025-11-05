@@ -35,114 +35,114 @@ O(n) time | O(1) space - where n is the length of the array
 
 Test Case 1
 
-```json
+```text
 {"array": [-1, -5, -10, -1100, -1100, -1101, -1102, -9001]}
 ```
 
 Test Case 2
 
-```json
+```text
 {"array": []}
 ```
 
 Test Case 3
 
-```json
+```text
 {"array": [1]}
 ```
 
 Test Case 4
 
-```json
+```text
 {"array": [1, 2]}
 ```
 
 Test Case 5
 
-```json
+```text
 {"array": [2, 1]}
 ```
 
 Test Case 6
 
-```json
+```text
 {"array": [1, 5, 10, 1100, 1101, 1102, 9001]}
 ```
 
 Test Case 7
 
-```json
+```text
 {"array": [-1, -5, -10, -1100, -1101, -1102, -9001]}
 ```
 
 Test Case 8
 
-```json
+```text
 {"array": [-1, -5, -10, -1100, -900, -1101, -1102, -9001]}
 ```
 
 Test Case 9
 
-```json
+```text
 {"array": [1, 2, 0]}
 ```
 
 Test Case 10
 
-```json
+```text
 {"array": [1, 1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 7, 9, 10, 11]}
 ```
 
 Test Case 11
 
-```json
+```text
 {"array": [1, 1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 11]}
 ```
 
 Test Case 12
 
-```json
+```text
 {"array": [-1, -1, -2, -3, -4, -5, -5, -5, -6, -7, -8, -7, -9, -10, -11]}
 ```
 
 Test Case 13
 
-```json
+```text
 {"array": [-1, -1, -2, -3, -4, -5, -5, -5, -6, -7, -8, -8, -9, -10, -11]}
 ```
 
 Test Case 14
 
-```json
+```text
 {"array": [-1, -1, -1, -1, -1, -1, -1, -1]}
 ```
 
 Test Case 15
 
-```json
+```text
 {"array": [1, 2, -1, -2, -5]}
 ```
 
 Test Case 16
 
-```json
+```text
 {"array": [-1, -5, 10]}
 ```
 
 Test Case 17
 
-```json
+```text
 {"array": [2, 2, 2, 1, 4, 5]}
 ```
 
 Test Case 18
 
-```json
+```text
 {"array": [1, 1, 1, 2, 3, 4, 1]}
 ```
 
 Test Case 19
 
-```json
+```text
 {"array": [1, 2, 3, 3, 2, 1]}
 ```

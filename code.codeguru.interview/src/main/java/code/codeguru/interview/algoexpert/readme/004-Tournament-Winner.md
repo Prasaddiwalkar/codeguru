@@ -45,7 +45,7 @@ results = [0, 0, 1]
 
 ## Test Cases
 
-```json
+```text
 {
   "competitions": [
     ["HTML", "C#"],

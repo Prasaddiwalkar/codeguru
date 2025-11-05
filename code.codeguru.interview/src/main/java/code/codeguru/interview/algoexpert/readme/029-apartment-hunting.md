@@ -18,7 +18,7 @@ If there are multiple most optimal blocks, your function can return the index of
 
 ## Sample Input
 
-```json
+```text
 {
   "blocks": [
     {"gym": false, "school": true, "store": false},
@@ -33,7 +33,7 @@ If there are multiple most optimal blocks, your function can return the index of
 
 ## Sample Output
 
-```json
+```text
 3
 ```
 
@@ -66,7 +66,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 1
 
-```json
+```text
 {
   "blocks": [
     {
@@ -101,7 +101,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 2
 
-```json
+```text
 {
   "blocks": [
     {
@@ -141,7 +141,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 3
 
-```json
+```text
 {
   "blocks": [
     {
@@ -187,7 +187,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 4
 
-```json
+```text
 {
   "blocks": [
     {
@@ -245,7 +245,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 5
 
-```json
+```text
 {
   "blocks": [
     {
@@ -305,7 +305,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 6
 
-```json
+```text
 {
   "blocks": [
     {
@@ -381,7 +381,7 @@ O(br) time | O(br) space - where b is the number of blocks and r is the number o
 
 ### Test Case 7
 
-```json
+```text
 {
   "blocks": [
     {

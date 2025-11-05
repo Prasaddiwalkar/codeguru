@@ -44,7 +44,7 @@ O(n) time | O(n) space - where n is the total number of elements in the array
 
 Test Case 1
 
-```json
+```text
 {
   "array": [
     [1, 2, 3, 4],
@@ -57,7 +57,7 @@ Test Case 1
 
 Test Case 2
 
-```json
+```text
 {
   "array": [
     [1]
@@ -67,7 +67,7 @@ Test Case 2
 
 Test Case 3
 
-```json
+```text
 {
   "array": [
     [1, 2],
@@ -78,7 +78,7 @@ Test Case 3
 
 Test Case 4
 
-```json
+```text
 {
   "array": [
     [1, 2, 3],
@@ -90,7 +90,7 @@ Test Case 4
 
 Test Case 5
 
-```json
+```text
 {
   "array": [
     [19, 32, 33, 34, 25, 8],
@@ -105,7 +105,7 @@ Test Case 5
 
 Test Case 6
 
-```json
+```text
 {
   "array": [
     [4, 2, 3, 6, 7, 8, 1, 9, 5, 10],
@@ -116,7 +116,7 @@ Test Case 6
 
 Test Case 7
 
-```json
+```text
 {
   "array": [
     [27, 12, 35, 26],
@@ -131,7 +131,7 @@ Test Case 7
 
 Test Case 8
 
-```json
+```text
 {
   "array": [
     [1, 2, 3, 4],
@@ -143,7 +143,7 @@ Test Case 8
 
 Test Case 9
 
-```json
+```text
 {
   "array": [
     [1, 2, 3],
@@ -157,7 +157,7 @@ Test Case 9
 
 Test Case 10
 
-```json
+```text
 {
   "array": [
     [1, 11],
@@ -176,7 +176,7 @@ Test Case 10
 
 Test Case 11
 
-```json
+```text
 {
   "array": [
     [1, 3, 2, 5, 4, 7, 6]
@@ -186,7 +186,7 @@ Test Case 11
 
 Test Case 12
 
-```json
+```text
 {
   "array": [
     [1],

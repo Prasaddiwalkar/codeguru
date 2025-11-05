@@ -42,7 +42,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 1
 
-```json
+```text
 {
   "points": [
     [1, 1],
@@ -58,7 +58,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 2
 
-```json
+```text
 {
   "points": [
     [3, 3],
@@ -75,7 +75,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 3
 
-```json
+```text
 {
   "points": [
     [1, 4],
@@ -92,7 +92,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 4
 
-```json
+```text
 {
   "points": [
     [1, 4],
@@ -104,7 +104,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 5
 
-```json
+```text
 {
   "points": [
     [0, 0]
@@ -114,7 +114,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 6
 
-```json
+```text
 {
   "points": [
     [1, 4],
@@ -132,7 +132,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 7
 
-```json
+```text
 {
   "points": [
     [1, 4],
@@ -154,7 +154,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 8
 
-```json
+```text
 {
   "points": [
     [-1, -1],
@@ -168,7 +168,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 9
 
-```json
+```text
 {
   "points": [
     [1, 1],
@@ -203,7 +203,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 10
 
-```json
+```text
 {
   "points": [
     [1, 1],
@@ -234,7 +234,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 11
 
-```json
+```text
 {
   "points": [
     [-78, -9],
@@ -249,7 +249,7 @@ What does it mean if two lines have the same slope and share a point?
 
 ### Test Case 12
 
-```json
+```text
 {
   "points": [
     [1000000001, 1],

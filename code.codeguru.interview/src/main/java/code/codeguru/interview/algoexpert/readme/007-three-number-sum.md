@@ -41,7 +41,7 @@ targetSum = 0
 
 O(n^2) time | O(n) space - where n is the length of the input array
 
-```json
+```text
 Test Case 1
 {
 "array": [12, 3, 1, 2, -6, 5, -8, 6],

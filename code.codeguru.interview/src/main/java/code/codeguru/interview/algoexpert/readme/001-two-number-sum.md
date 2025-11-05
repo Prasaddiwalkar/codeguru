@@ -21,7 +21,7 @@ You can assume that there will be at most one pair of numbers summing up to the 
 
 ## Sample Input
 
-```json
+```text
 {
   "array": [3, 5, -4, 8, 11, 1, -1, 6],
   "targetSum": 10

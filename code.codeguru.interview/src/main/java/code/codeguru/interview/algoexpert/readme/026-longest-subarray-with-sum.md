@@ -10,7 +10,7 @@ You can assume that the given inputs will only ever have one answer.
 
 ## Sample Input
 
-```json
+```text
 {
   "array": [1, 2, 3, 4, 3, 3, 1, 2, 1, 2],
   "targetSum": 10
@@ -19,7 +19,7 @@ You can assume that the given inputs will only ever have one answer.
 
 ## Sample Output
 
-```json
+```text
 [4, 8]
 ```
 
@@ -50,78 +50,78 @@ O(n) time | O(1) space - where n is the length of the input array
 
 ### Test Case 1
 
-```json
+```text
 {"array": [1, 2, 3, 4, 3, 3, 1, 2, 1], "targetSum": 10}
 ```
 
 ### Test Case 2
 
-```json
+```text
 {"array": [1, 2, 3, 4, 0, 0, 0, 0, 0, 3, 3, 1, 2, 1], "targetSum": 10}
 ```
 
 ### Test Case 3
 
-```json
+```text
 {"array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "targetSum": 1}
 ```
 
 ### Test Case 4
 
-```json
+```text
 {"array": [0, 0, 0, 0, 0, 1, 0, 0, 0, 0], "targetSum": 1}
 ```
 
 ### Test Case 5
 
-```json
+```text
 {"array": [25, 25, 25, 25, 100, 0, 0, 0, 0, 0, 0, 0], "targetSum": 100}
 ```
 
 ### Test Case 6
 
-```json
+```text
 {"array": [1, 2, 3, 4, 5, 5, 5, 5], "targetSum": 15}
 ```
 
 ### Test Case 7
 
-```json
+```text
 {"array": [0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 5, 5, 5, 5, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1], "targetSum": 20}
 ```
 
 ### Test Case 8
 
-```json
+```text
 {"array": [1, 2, 3, 4, 5, 0, 0, 0, 6, 7, 8, 9, 10], "targetSum": 15}
 ```
 
 ### Test Case 9
 
-```json
+```text
 {"array": [61, 54, 1, 499, 2212, 4059, 1, 2, 3, 1, 3], "targetSum": 19}
 ```
 
 ### Test Case 10
 
-```json
+```text
 {"array": [0], "targetSum": 0}
 ```
 
 ### Test Case 11
 
-```json
+```text
 {"array": [10], "targetSum": 10}
 ```
 
 ### Test Case 12
 
-```json
+```text
 {"array": [5], "targetSum": 0}
 ```
 
 ### Test Case 13
 
-```json
+```text
 {"array": [5], "targetSum": 10}
 ```

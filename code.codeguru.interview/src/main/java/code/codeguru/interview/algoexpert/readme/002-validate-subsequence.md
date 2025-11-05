@@ -14,7 +14,7 @@ Note that a single number in an array and the array itself are both valid subseq
 
 ## Sample Input
 
-```json
+```text
 {
   "array": [5, 1, 22, 25, 6, -1, 8, 10],
   "sequence": [1, 6, -1, 10]
@@ -29,7 +29,7 @@ true
 
 ## More Sample Inputs
 
-```json
+```text
 [
   { "array": [5, 1, 22, 25, 6, -1, 8, 10], "sequence": [5, 1, 22, 25, 6, -1, 8, 10] },
   { "array": [5, 1, 22, 25, 6, -1, 8, 10], "sequence": [5, 1, 22, 6, -1, 8, 10] },

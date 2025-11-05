@@ -39,84 +39,84 @@ O(n) time | O(1) space - where n is the number of seats
 
 ### Test Case 1
 
-```json
+```text
 {"seats": [1]}
 ```
 
 ### Test Case 2
 
-```json
+```text
 {"seats": [1, 0, 1, 0, 0, 0, 1]}
 ```
 
 ### Test Case 3
 
-```json
+```text
 {"seats": [1, 0, 1]}
 ```
 
 ### Test Case 4
 
-```json
+```text
 {"seats": [1, 0, 0, 1]}
 ```
 
 ### Test Case 5
 
-```json
+```text
 {"seats": [1, 1, 1]}
 ```
 
 ### Test Case 6
 
-```json
+```text
 {"seats": [1, 0, 0, 1, 0, 0, 1]}
 ```
 
 ### Test Case 7
 
-```json
+```text
 {"seats": [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1]}
 ```
 
 ### Test Case 8
 
-```json
+```text
 {"seats": [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1]}
 ```
 
 ### Test Case 9
 
-```json
+```text
 {"seats": [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]}
 ```
 
 ### Test Case 10
 
-```json
+```text
 {"seats": [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]}
 ```
 
 ### Test Case 11
 
-```json
+```text
 {"seats": [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]}
 ```
 
 ### Test Case 12
 
-```json
+```text
 {"seats": [1, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
 ```
 
 ### Test Case 13
 
-```json
+```text
 {"seats": [1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1]}
 ```
 
 ### Test Case 14
 
-```json
+```text
 {"seats": [1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1]}
 ```

@@ -51,84 +51,84 @@ Boyer–Moore: O(n) time | O(1) space.
 
 ### Test Case 1
 
-```json
+```text
 { "array": [2] }
 ```
 
 ### Test Case 2
 
-```json
+```text
 { "array": [1, 2, 1] }
 ```
 
 ### Test Case 3
 
-```json
+```text
 { "array": [3, 3, 1] }
 ```
 
 ### Test Case 4
 
-```json
+```text
 { "array": [4, 5, 5] }
 ```
 
 ### Test Case 5
 
-```json
+```text
 { "array": [1, 2, 3, 2, 2, 1, 2] }
 ```
 
 ### Test Case 6
 
-```json
+```text
 { "array": [1, 2, 3, 2, 3, 2, 2, 4, 2] }
 ```
 
 ### Test Case 7
 
-```json
+```text
 { "array": [1, 1, 1, 1, 1, 1, 1] }
 ```
 
 ### Test Case 8
 
-```json
+```text
 { "array": [5, 4, 3, 2, 1, 1, 1, 1, 1] }
 ```
 
 ### Test Case 9
 
-```json
+```text
 { "array": [1, 1, 1, 1, 1, 5, 4, 3, 2] }
 ```
 
 ### Test Case 10
 
-```json
+```text
 { "array": [1, 1, 1, 1, 2, 2, 2, 2, 2] }
 ```
 
 ### Test Case 11
 
-```json
+```text
 { "array": [435, 6543, 6543, 435, 535, 6543, 6543, 12, 43, 6543, 6543] }
 ```
 
 ### Test Case 12
 
-```json
+```text
 { "array": [1, 2, 2, 2, 1] }
 ```
 
 ### Test Case 13
 
-```json
+```text
 { "array": [1, 2, 3, 4, 4, 4, 4, 4, 4, 4, 3, 2, 1] }
 ```
 
 ### Test Case 14
 
-```json
+```text
 { "array": [1, 2, 3, 2, 2, 4, 2, 2, 5, 2, 1] }
 ```
