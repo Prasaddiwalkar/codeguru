@@ -10,13 +10,10 @@ public class MissingNumbersTest {
     MissingNumbers numbers;
 
     @BeforeAll
-    public void setup(){
+    public void setup() {
         numbers = new MissingNumbers();
     }
 
     @Test
-    public void missingNumberTest(){
-
-    }
-
+    public void missingNumberTest() {}
 }

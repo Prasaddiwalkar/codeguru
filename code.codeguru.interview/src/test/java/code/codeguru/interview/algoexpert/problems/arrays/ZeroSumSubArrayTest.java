@@ -9,11 +9,9 @@ public class ZeroSumSubArrayTest {
     ZeroSumSubArray subArray;
 
     @BeforeAll
-    public void setup(){
+    public void setup() {
         subArray = new ZeroSumSubArray();
     }
 
-    public void zeroSumSubArrayTest(){
-
-    }
+    public void zeroSumSubArrayTest() {}
 }
