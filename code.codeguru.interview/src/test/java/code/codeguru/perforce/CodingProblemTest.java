@@ -7,16 +7,16 @@ import org.junit.jupiter.api.TestInstance;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class CodingProblemTest {
 
-   CodingProblem problem;
+    CodingProblem problem;
 
-   @BeforeAll
-   public void setup(){
-      problem = new CodingProblem();
-   }
+    @BeforeAll
+    public void setup() {
+        problem = new CodingProblem();
+    }
 
-   @Test
-   public void testSolution(){
+    @Test
+    public void testSolution() {
 
-      problem.solution("");
-   }
+        problem.solution("");
+    }
 }
