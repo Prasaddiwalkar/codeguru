@@ -5,6 +5,8 @@
 You are working on a new application for recording debts.
 The program allows users to create groups that show all records of debts between group members.
 Given the group debt records (including the borrower name, lender name and debt amount), determine who in the group has the smallest negative balance.
+You are working on new application for recording debts. This program allows users to create groups that show all records of debts between the group members.
+Give the group debt records (including the borrower name, lender name and debt amount). Who in the group has the smallest negative balance?
 
 ### Notes
 
